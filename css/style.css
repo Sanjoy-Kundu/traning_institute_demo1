@@ -1,0 +1,1240 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* 
+//card button*/
+.primary-button {
+	padding: 10px 10px;
+	padding: 10px 10px;
+	height: 39px;
+	background-color: #FF3332;
+	width: 160px;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	/* align-items: center; */
+	margin: 0 auto;
+	margin-top: 43px;
+	border: none;
+	font-size: 17px;
+	color: wheat;
+	font-weight: 900;
+	border-radius: 11px;
+}
+
+
+button a {
+	text-decoration: none;
+	color: #e5e5e5;
+	font-size: 14px;
+}
+
+.seminar-button {
+	width: 95px;
+	height: 35px;
+	border: 1px solid red;
+	margin: 0 auto;
+	border-radius: 9px;
+	color: red;
+}
+
+.seminar-button:hover {
+	width: 95px;
+	height: 35px;
+	background-color: red;
+	margin: 0 auto;
+	border-radius: 9px;
+	color: white;
+	transition: .5s all;
+}
+
+.seminar-button a {
+	color: red;
+}
+
+.seminar-button a:hover {
+	color: white;
+}
+
+
+.succesfull-expert-button {
+	background-color: red;
+	padding: 11px 15px;
+	border: none;
+	width: 161px;
+	height: 50px;
+	border-radius: 11px;
+}
+
+
+/*========button end ==== */
+
+/* Style the navigation bar */
+.top-header {
+	width: 100%;
+	background-color: #FF3332;
+	overflow: auto;
+}
+
+
+
+/* Navbar links */
+.navbar a {
+	float: left;
+	text-align: center;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+/* .navbar a:hover {
+	background-color: #000;
+} */
+
+/* Current/active navbar link */
+/* .active {
+	background-color: rgb(221, 34, 34);
+}
+ */
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+
+	}
+}
+
+
+/* Style the navbar */
+#navbar {
+	overflow: hidden;
+	/* 	background-color: #FFFFFF; */
+	width: 100%;
+}
+
+/* Navbar links */
+#navbar a {
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+/* Page content */
+.content {
+	padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+	padding-top: 60px;
+}
+
+/* ===========Header start ======= */
+header {
+	width: 100%;
+	background-color: #FAF0F0;
+}
+
+/* ===========Header end ======= */
+
+/*==================== Header des start =============*/
+.header-defination {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.header-img {
+	width: 490px;
+	height: 296px;
+	padding-left: 15px;
+}
+
+.header-img img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.header-img-des {
+	display: flex;
+	align-items: center;
+}
+
+.header-img-des h6 {
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 8px;
+	color: #3b3939;
+}
+
+.header-main-title {
+	font-size: 45px;
+}
+
+.header-main-title span {
+	color: red;
+}
+
+.header-text-des {
+	padding-top: 20px;
+}
+
+/*==================== Header des end =============*/
+
+
+
+
+/*===========Course card  start=======*/
+.course_info {
+	margin-top: 40px;
+}
+
+.course_info h1 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	color: black;
+	text-align: center;
+
+}
+
+p {
+	color: #575757;
+}
+
+.design-courses {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.course-card {
+	margin-top: 50px;
+}
+
+.course-card p {
+	color: black;
+}
+
+.all-course {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 15px;
+}
+
+.course_card {
+	background-color: #e5dfdf;
+	height: 107px;
+	width: 169px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.course_card img {
+	height: 30px;
+	width: 30px;
+}
+
+.course_card p {
+	color: black;
+
+}
+
+/*============Course card end ======*/
+
+/*Course admission info start */
+.course-admission-info {
+	margin-top: 60px;
+}
+
+
+.course-admission-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.course-admission-header h1 {
+	color: black;
+}
+
+.course-admission-header p {
+	width: 50%;
+	color: #575757;
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+/*Course admission info end */
+
+
+/* course single card  start*/
+.courses {
+	margin-top: 90px;
+}
+
+.course-title h1 {
+	margin-bottom: 40px;
+}
+
+.course-single-card {
+	width: 330px;
+	height: 319px;
+	background-color: rgb(233, 235, 233);
+	gap: 10px;
+}
+
+.course-single-card-img {
+	width: 330px;
+	height: 185px;
+}
+
+.course-single-card-img img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.course-des {
+	padding: 10px;
+
+}
+
+.course-des h5 {
+	color: orange;
+}
+
+.course-des h3 {}
+
+.fa-star {
+	color: orange;
+}
+
+.all-star-part {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h4 .price {
+	color: black;
+	font-weight: bolder;
+}
+
+/* course single card end*/
+
+
+
+/*============ seminar section start ======*/
+.seminar-full-info {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	gap: 10px 10px;
+	background-color: #f3e3e3;
+	padding: 30px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 5px;
+}
+
+.seminar-title {
+	font-size: 35px;
+}
+
+.seminar-des {
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 31px;
+	padding-bottom: 17px;
+	text-align: -webkit-auto;
+}
+
+.seminar-img {
+	height: 400px;
+	width: 450px;
+}
+
+.seminar-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+
+.seminar-date {
+	background-color: #fff5f5;
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	justify-content: space-evenly;
+	height: 97px;
+	align-items: center;
+	padding: 0px 5px;
+	border-radius: 13px;
+	margin-bottom: 20px;
+}
+
+.seminer-subject p {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/*=============seminar section end=======*/
+
+/*=========== Practiacl project info start ========*/
+.practical-project-info {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	gap: 10px 10px;
+	background-color: #F6F5FB;
+	padding: 30px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 5px;
+}
+
+
+.practical-img {
+	height: 400px;
+	width: 450px;
+}
+
+.practical-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.project-title {
+	font-size: 35px;
+}
+
+/*===========Practical project info end ========*/
+
+
+/*=============== successfull info start =============*/
+.success-full-info {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	gap: 10px 10px;
+	padding: 30px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 5px;
+}
+
+.success-sub-title {
+	color: #fb312e;
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+.success-main-tile {
+	font-size: 40px;
+	padding-top: 25px;
+}
+
+.successfull-des {
+	font-size: 17px;
+	padding-top: 13px;
+	word-spacing: 1px;
+	line-height: 27px;
+	text-align: -webkit-left;
+}
+
+
+.succesfull-double-btn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 21px;
+	gap: 23px;
+}
+
+.succesfull-expert-button a {
+	font-size: 19px;
+}
+
+
+
+
+.succesfull-right-img {}
+
+.succesfull-img {
+	height: 400px;
+	width: 450px;
+	margin-top: 55px;
+}
+
+.succesfull-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+/*=============== successfull info end =============*/
+
+/*======================Sheba card  start================*/
+.sheba {
+	margin-top: 60px;
+	padding-top: 60px;
+}
+
+.sheba-heading {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+.sheba-heading h1 {
+	padding-bottom: 12px;
+	font-size: 30px;
+
+}
+
+.sheba-heading p {
+	margin-bottom: 15px;
+}
+
+
+.sheba-card-des {
+	margin-bottom: 15px;
+}
+
+.icon {
+	width: 51px;
+	height: 51px;
+	margin: 0 auto;
+}
+
+.icon img {
+	height: 100%;
+	width: 100%;
+}
+
+.sheba-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	align-items: center;
+	grid-gap: 10px;
+}
+
+.card {
+	background-color: #F8FAEC;
+	width: 323px;
+	height: 330px;
+	height: auto;
+	padding: 20px;
+}
+
+.sheba-card-title {
+	padding-top: 8px;
+	padding-bottom: 9px;
+	font-size: 19px;
+	font-family: sans-serif;
+	font-weight: 900;
+	text-align: center;
+}
+
+.sheba-card-des {
+	font-size: 15px;
+	text-align: justify;
+}
+
+/*======================Sheba card  end================*/
+
+/*============== successfull story start===============*/
+.successfull-story {
+	margin-top: 60px;
+	padding-top: 60px;
+}
+
+
+
+.sheba-heading {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+.sheba-heading h1 {
+	padding-bottom: 12px;
+	font-size: 30px;
+
+}
+
+.sheba-heading p {
+	margin-bottom: 15px;
+}
+
+/*============== successfull story end===============*/
+
+/*slider start*/
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* slider end*/
+/*========== success card  start============*/
+.all-success-card {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 15px;
+}
+
+.success-single-card {
+	background-color: #FAF9FD;
+	height: 107px;
+	width: 169px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.success-single-card:hover {
+	background-color: #e3daff;
+	transition: .10s all;
+}
+
+.success-single-card h2 {
+	color: rgb(227, 43, 43);
+	font-weight: bolder;
+}
+
+.success-single-card h3 {
+	color: rgb(22, 21, 21);
+}
+
+/*========== success card end============*/
+
+/*===================== ADMISSION SECTION START ========*/
+.admission-course {
+	margin-top: 30px;
+	width: 100%;
+	background-color: #403532;
+}
+
+.admission-header {
+	padding: 150px;
+	text-align: center;
+	height: auto;
+	margin: 0 auto;
+}
+
+.admission-header h1 {
+	color: white;
+	font-size: 35px;
+	padding-bottom: 10px;
+}
+
+.admission-header h3 {
+	font-size: 20px;
+	width: 57%;
+	margin: 0 auto;
+	color: #ded0b8;
+	margin-top: 13px;
+	padding-bottom: 31px;
+}
+
+.admission-btn {
+	background-color: #4CAF50;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: transparent;
+	color: black;
+	border: 2px solid #f44336;
+}
+
+.admission-btn:hover {
+	background-color: #f44336;
+	color: white;
+}
+
+.admission-btn a {
+	font-size: 20px;
+}
+
+/*===================== ADMISSION SECTION END ========*/
+
+/* =====================cashing system start================*/
+.cashing-system-header {
+	padding-top: 130px;
+	background-color: #FFFDFD;
+}
+
+.cashing-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 36px;
+	align-items: center;
+}
+
+.cashing-title {
+	text-align: center;
+}
+
+.cashing-card {
+	border: 1px solid #c4c4c4;
+	width: 313px;
+	padding: 11px;
+	height: 172px;
+	background: whitesmoke;
+}
+
+.cashing-card img {
+	width: 155px;
+	height: 79px;
+	margin-left: 70px;
+}
+
+.cashing-card h2 {
+	font-size: 36px;
+	text-align: center;
+	margin-top: 7px;
+}
+
+/* =====================cashing system end================*/
+
+/*==================Footer start============*/
+.footer-main {
+	padding-top: 40px;
+}
+
+.all-footer-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+	background-color: #faf3f3;
+}
+
+.footer-icon {
+	width: 161px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-icon .fa {
+	font-size: 19px;
+	width: 33px;
+	border-radius: 14px;
+	color: red;
+	transition: .5s all;
+}
+
+.footer-icon .fa:hover {
+	transform: scale(1.5);
+}
+
+/*==================Footer end============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider media screen*/
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+	.prev,
+	.next,
+	.text {
+		font-size: 11px
+	}
+}
+
+/*slider media end*/
+
+/* =======================================================
+===============MEDIA QUERY START ========
+=====================================================*/
+@media screen and (max-width: 767px) {
+
+	/*===========header-card start======*/
+	.header-defination {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-img-des {
+		justify-content: center;
+	}
+
+	.header-main-title {
+		font-size: 20px;
+		text-align: center;
+		padding-top: 2px;
+	}
+
+	.header-text-des {
+		padding-top: 15px;
+		font-size: 16px;
+	}
+
+	.succesfull-expert-button {
+		background-color: #ff0000;
+		border: none;
+		width: 126px;
+		height: 43px;
+		border-radius: 6px;
+	}
+
+	.succesfull-expert-button a {
+		font-size: 13px;
+		color: white;
+		font-weight: 700;
+	}
+
+	.header-img {
+		width: 375px;
+		height: 288px;
+		margin: 0 auto;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	p {
+		font-size: 10px;
+		text-align: justify;
+		padding: 0px 20px;
+	}
+
+	.course_info h1 {
+		font-size: 23px;
+	}
+
+	.course-card {
+		margin-top: 28px;
+	}
+
+	.all-course {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 17px 13px;
+	}
+
+	.course_card {
+		background-color: #e5dfdf;
+		height: 94px;
+		width: 101px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		/* text-align: center; */
+		margin: 0 auto;
+	}
+
+	.course-admission-header h1 {
+		color: black;
+		font-size: 23px;
+		text-align: center;
+	}
+
+	.course-admission-header p {
+		width: 100%;
+		/* color: #575757; */
+		text-align: center;
+		padding-top: 6px;
+		font-size: 10px;
+	}
+
+	.courses {
+		margin-top: 43px;
+	}
+
+	.course-title {
+		font-size: 23px;
+		text-align: center;
+	}
+
+
+	.design-courses {
+		width: 100%;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		padding-top: 24px;
+	}
+
+	.course-single-card {
+		width: 330px;
+		height: 319px;
+		background-color: rgb(208 208 208);
+		margin-bottom: 20px;
+		margin: 20px auto;
+	}
+
+	.seminar-full-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: space-between;
+		/* gap: 10px 10px; */
+		background-color: #f3e3e3;
+		padding: 16px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 46px;
+	}
+
+	.seminar-title {
+		font-size: 23px;
+		text-align: center;
+	}
+
+	.seminar-des {
+		font-size: 10px;
+		line-height: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: justify;
+	}
+
+	.seminar-img {
+		height: 329px;
+		width: 398px;
+		margin: 0 auto;
+	}
+
+	.practical-project-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		background-color: #F6F5FB;
+		padding: 20px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 13px;
+	}
+
+	.practical-img {
+		height: 329px;
+		width: 398px;
+		margin: 0 auto;
+	}
+
+	.project-title {
+		font-size: 23px;
+		text-align: center;
+	}
+
+	.success-sub-title {
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.success-full-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
+
+	.success-main-tile {
+		font-size: 23px;
+		padding-top: 6px;
+		text-align: center;
+	}
+
+	.successfull-des {
+		font-size: 10px;
+		padding-top: 13px;
+		word-spacing: 0px;
+		line-height: 15px;
+		text-align: -webkit-left;
+	}
+
+	.succesfull-img {
+		height: 329px;
+		width: 398px;
+		margin: 14px auto;
+	}
+
+	.sheba-heading {
+		width: 100%;
+	}
+
+	.sheba-heading h1 {
+		padding-bottom: 5px;
+		font-size: 23px;
+		text-align: center;
+	}
+
+	.sheba-heading p {
+		margin-bottom: 18px;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.sheba-cards {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.card {
+		background-color: #F8FAEC;
+		width: 323px;
+		height: 330px;
+		height: auto;
+		padding: 20px;
+		margin: 10px auto;
+	}
+
+	.all-success-card {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 16px;
+	}
+
+	.success-single-card {
+		margin: 0 auto;
+	}
+
+	.admission-header {
+		padding: 61px;
+	}
+
+	.admission-header h1 {
+		font-size: 23px;
+	}
+
+	.admission-header h3 {
+		font-size: 10px;
+		/* width: 57%; */
+		margin: 0 auto;
+		color: #ded0b8;
+		margin-top: 0px;
+		padding-bottom: 30px;
+	}
+
+	.admission-btn {
+		padding: 10px 32px;
+		margin: 6px 2px;
+	}
+
+	.cashing-title {
+		text-align: center;
+		font-size: 23px;
+	}
+
+	.cashing-cards {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		/* justify-content: space-between; */
+		/* width: 100%; */
+		padding-top: 36px;
+	}
+
+	.cashing-card {
+		border: 1px solid #c4c4c4;
+		width: 313px;
+		padding: 11px;
+		height: 172px;
+		background: whitesmoke;
+		margin: 10px auto;
+	}
+}
+
+
+
+
+/* =======================================================
+===============MEDIA QUERY END ========
+=====================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 1140px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 1140px;
+		margin: 0 auto;
+	}
+}
