@@ -818,6 +818,7 @@ h4 .price {
 	padding: 11px;
 	height: 172px;
 	background: whitesmoke;
+	margin: 10px 15px;
 }
 
 .cashing-card img {
@@ -894,6 +895,39 @@ h4 .price {
 }
 
 /*slider media end*/
+
+/* =======================================================
+===============MEDIA QUERY START ========
+=====================================================*/
+@media screen and (max-width: 430px) {
+
+	.header-img {
+		width: 375px;
+		height: 288px;
+		margin: 0 auto;
+	}
+
+	.header-img img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.course-single-card {
+		width: 278px;
+		height: 321px;
+		background-color: rgb(208 208 208);
+		margin-bottom: 20px;
+		margin: 20px auto;
+	}
+}
+
+
+
+
+
+
+
+
 
 /* =======================================================
 ===============MEDIA QUERY START ========
@@ -1011,13 +1045,15 @@ h4 .price {
 		padding-top: 24px;
 	}
 
+
 	.course-single-card {
 		width: 330px;
 		height: 319px;
-		background-color: rgb(208 208 208);
-		margin-bottom: 20px;
-		margin: 20px auto;
+		background-color: rgb(233, 235, 233);
+		gap: 10px;
+		margin: 10px auto;
 	}
+
 
 	.seminar-full-info {
 		margin-top: 60px;
@@ -1201,40 +1237,482 @@ h4 .price {
 /* =======================================================
 ===============MEDIA QUERY END ========
 =====================================================*/
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header-main-title {
+		font-size: 25px;
+	}
+
+	.header-img {
+		width: 390px;
+		height: 229px;
+		padding-left: 22px;
+	}
+
+	.all-course {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 15px;
+	}
+
+	.all-course {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.course-admission-header {
+		display: none;
+	}
+
+	.course-admission-header h1 {
+		color: black;
+		text-align: center;
+	}
+
+	.course-title {
+		text-align: center;
+	}
+
+	.design-courses {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.course-single-card {
+		margin-bottom: 19px;
+	}
+
+
+
+
+	.seminar-title {
+		font-size: 25px;
+	}
+
+	.seminar-img {
+		height: 305px;
+		width: 317px;
+		margin-top: 15px;
+	}
+
+	.seminar-des {
+		font-size: 14px;
+		line-height: 24px;
+		padding-top: 5px;
+		padding-bottom: 17px;
+		text-align: justify;
+	}
+
+	.practical-img {
+		height: 305px;
+		width: 317px;
+		margin-top: 20px;
+	}
+
+	.project-title {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+
+	.succesfull-img {
+		height: 305px;
+		width: 317px;
+		margin-top: 55px;
+	}
+
+	.success-main-tile {
+		font-size: 25px;
+	}
+
+	.sheba-heading {
+		text-align: center;
+		width: 100%;
+	}
+
+	.sheba-heading h1 {
+		padding-bottom: 12px;
+		font-size: 25px;
+	}
+
+
+	.sheba-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		align-items: center;
+		grid-gap: 20px 0px;
+	}
+
+	.all-success-card {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.admission-header h1 {
+		color: white;
+		font-size: 25px;
+	}
+
+	.admission-header h3 {
+		font-size: 20px;
+		width: 100%;
+	}
+
+	.cashing-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+
+	.cashing-card {
+		margin-bottom: 24px;
+	}
+
+	.all-footer-section {
+		flex-direction: column;
+	}
+}
+
+/*============================
+MEDIA QUERY FOR SMALL PHONE
+ ========================*/
+
+
+
+/*========================================================
+MEDIA QUERY FOR SMALL MONITOR SCREEN START
+ =========================================================*/
+@media only screen and (min-width: 992px) {
+	.header-defination {
+		grid-template-columns: repeat(2, 1fr);
+		padding-bottom: 50px;
+	}
+
+	.header-img {
+		width: 490px;
+		height: 296px;
+		padding-left: 15px;
+	}
+
+	.header-img img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.header-img-des {
+		display: flex;
+		align-items: center;
+	}
+
+	.header-img-des h6 {
+		font-weight: bold;
+		font-size: 15px;
+		padding-left: 8px;
+		color: #3b3939;
+	}
+
+	.header-main-title {
+		font-size: 45px;
+	}
+
+	.header-main-title span {
+		color: red;
+	}
+
+	.header-text-des {
+		padding-top: 20px;
+	}
+
+	.all-course {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 15px;
+	}
+
+	.course_card {
+		background-color: #e5dfdf;
+		height: 107px;
+		width: 169px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.course-single-card {
+		width: 330px;
+		height: 319px;
+		background-color: rgb(233, 235, 233);
+		gap: 10px;
+	}
+
+	.course-single-card img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.course_card p {
+		color: black;
+
+	}
+
+	.design-courses {
+		width: 100%;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-between;
+		padding-top: 40px;
+	}
+
+	.course-title {
+		font-size: 35px;
+		text-align: left;
+	}
+
+	.seminar-full-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		gap: 10px 10px;
+		background-color: #f3e3e3;
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
+
+	.seminar-title {
+		font-size: 35px;
+	}
+
+	.seminar-des {
+		font-size: 18px;
+		line-height: 24px;
+		padding-top: 31px;
+		padding-bottom: 17px;
+		text-align: -webkit-auto;
+	}
+
+	.seminar-img {
+		height: 400px;
+		width: 450px;
+	}
+
+	.seminar-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+
+
+	.seminar-date {
+		background-color: #fff5f5;
+		display: grid;
+		grid-template-columns: repeat(3, 3fr);
+		justify-content: space-evenly;
+		height: 97px;
+		align-items: center;
+		padding: 0px 5px;
+		border-radius: 13px;
+		margin-bottom: 20px;
+	}
+
+	.seminer-subject p {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+
+	.practical-project-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		gap: 10px 10px;
+		background-color: #F6F5FB;
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
+
+
+	.practical-img {
+		height: 400px;
+		width: 450px;
+	}
+
+	.practical-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+
+	.project-title {
+		font-size: 35px;
+	}
+
+
+	.success-full-info {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		gap: 10px 10px;
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		padding-bottom: 5px;
+	}
+
+	.success-sub-title {
+		color: #fb312e;
+		font-size: 22px;
+		font-weight: bolder;
+	}
+
+	.success-main-tile {
+		font-size: 40px;
+		padding-top: 25px;
+	}
+
+	.successfull-des {
+		font-size: 17px;
+		padding-top: 13px;
+		word-spacing: 1px;
+		line-height: 27px;
+		text-align: -webkit-left;
+	}
+
+
+	.succesfull-double-btn {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 21px;
+		gap: 23px;
+	}
+
+	.succesfull-expert-button a {
+		font-size: 19px;
+	}
+
+	.succesfull-img {
+		height: 400px;
+		width: 450px;
+		margin-top: 55px;
+	}
+
+	.succesfull-img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+	}
 
 
 
 
 
+	.sheba-cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-between;
+		align-items: center;
+		grid-gap: 10px;
+	}
+
+	.card {
+		background-color: #F8FAEC;
+		width: 323px;
+		height: 330px;
+		height: auto;
+		padding: 20px;
+	}
+
+	.sheba-card-title {
+		padding-top: 8px;
+		padding-bottom: 9px;
+		font-size: 19px;
+		font-family: sans-serif;
+		font-weight: 900;
+		text-align: center;
+	}
+
+	.sheba-card-des {
+		font-size: 15px;
+		text-align: justify;
+	}
+
+	.all-success-card {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 15px;
+	}
+
+	.cashing-cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-between;
+		width: 100%;
+		padding-top: 36px;
+		align-items: center;
+	}
+
+	.all-footer-section {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 50px;
+		background-color: #faf3f3;
+	}
+
+	.footer-icon {
+		width: 161px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.footer-icon .fa {
+		font-size: 19px;
+		width: 33px;
+		border-radius: 14px;
+		color: red;
+		transition: .5s all;
+	}
+
+	.footer-icon .fa:hover {
+		transform: scale(1.5);
+	}
+}
+
+
+/*========================================================
+MEDIA QUERY FOR SMALL MONITOR SCREEN END
+ =========================================================*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
 @media screen and (min-width: 992px) {
 	.container {
 		width: 1140px;
 		margin: 0 auto;
 	}
-}
+} */
 
 @media screen and (min-width: 768px) {
-	.container {
-		width: 1140px;
-		margin: 0 auto;
-	}
+	.container {}
 }
